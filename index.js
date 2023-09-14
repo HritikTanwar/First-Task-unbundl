@@ -3,6 +3,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebas
 import { getDatabase, ref, push } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"
 
 const appSettings = {
+    // Here is the link of the created database.
     databaseURL: "https://user-database-first-task-default-rtdb.asia-southeast1.firebasedatabase.app"
 }
 
@@ -18,7 +19,7 @@ const LeftPage = document.querySelector(".pageLeft")
 const RightPage = document.querySelector(".pageRight")
 const Message = document.querySelector(".SubmitMsg")
 
-
+// Creating an eventlistner on the Submit button which first validate the form and the shows the message after completion of storing data in database.
 document.getElementById("Form").addEventListener("submit", function(event) {
     event.preventDefault(); // Prevent the form from submitting the normal way
 
@@ -46,6 +47,7 @@ document.getElementById("Form").addEventListener("submit", function(event) {
      }
      // Now push the entered data to the Firebase Data Base.
      push(userDataInDB, UserDataForm)
+     // Now display the "Form Submitted Successfully" message.
      LeftPage.style.display = "none"
      RightPage.style.display = "none"
      Message.style.display = "block"
