@@ -1,0 +1,156 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+header{
+    background-color: rgba(162, 240, 240, 0.642);
+    width: 100vw;
+}
+.topHeader{
+    width: 100%;
+    /* background-color: seagreen; */
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 250px;
+}
+.topHeader .searchBar{
+    width: 20%;
+    height: 45px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 500,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.topHeader .searchBar input{
+    width: 90%;
+    height: 95%;
+    border: 1px solid grey;
+    border-radius: 4px;
+    padding-left: 15px;
+    font-size: 14px;
+}
+.topHeader .searchBar input:focus{
+    outline: none;
+}
+.btmHeader{
+    padding-top: 10px;
+    width: 100%;
+    height: 40px;
+    /* background-color: palegreen; */
+    display: flex;
+    padding-left: 150px;
+    gap: 80px;
+}
+.btmHeader h4{
+    font-weight: 400;
+}
+.material-symbols-outlined,h4,h1,p:hover{
+    cursor: pointer;
+}
+.page1{
+    width: 100vw;
+    height: calc(100vh - 132px);
+    /* background-color: palegreen; */
+    display: flex;
+}
+.pageLeft{
+    display: block;
+    width: 70%;
+    height: 100%;
+    /* background-color: chocolate; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 100px;
+}
+form{
+    /* background-color: blueviolet; */
+    height: 70%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    bottom: 80px;
+}
+form .checkBox label{
+    font-size: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+form .About{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin-top: 40px;
+    width: 80%;
+    height: 70%;
+    /* background-color: rgb(238, 0, 0); */
+}
+form .About label{
+    font-size: 18px;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+form .About label input{
+    padding-left: 10px;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 240px;
+    height: 25px;
+}
+form .About label input:focus{
+    outline: none;
+    border-bottom: 1px solid black;
+}
+.pageRight{
+    display: block;
+    width: 30%;
+    height: 100%;
+}
+.pageRight img{
+    height: 350px;
+    width: 400px;
+}
+#Button input{
+    border: 1px solid black;
+    background-color: white;
+    width: 90px;
+    height: 30px;
+    transition: all 0.5s;
+    border-radius: 12px;
+}
+#Button input:hover{
+    cursor: pointer;
+    width: 120px;
+    height: 40px;
+    font-size: 18px;
+    color: white;
+    background-color: black;
+    border: none;
+}
+.SubmitMsg{
+    display: none;
+    font-size: 32px
+}
